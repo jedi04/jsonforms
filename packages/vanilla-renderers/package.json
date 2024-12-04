@@ -1,6 +1,6 @@
 {
   "name": "@jarvis124/vanilla-renderers",
-  "version": "3.4.3",
+  "version": "3.4.4",
   "description": "Default Renderer Set for JSON Forms",
   "repository": "https://github.com/eclipsesource/jsonforms",
   "bugs": "https://github.com/eclipsesource/jsonforms/issues",
