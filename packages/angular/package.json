@@ -81,7 +81,7 @@
     "@angular/compiler-cli": "^17.0.0",
     "@angular/core": "^17.0.0",
     "@angular/forms": "^17.0.0",
-    "@jsonforms/core": "3.4.2",
+    "@jsonforms/core": "workspace:*",
     "@typescript-eslint/eslint-plugin": "^5.54.1",
     "@typescript-eslint/parser": "^5.54.1",
     "ava": "^6.1.2",
@@ -99,6 +99,5 @@
     "tslib": "^2.3.0",
     "typedoc": "~0.25.3",
     "typescript": "~5.2.2"
-  },
-  "gitHead": "4af85daafd9a89d6f7c4ea2a06a8c3ce5bf7c8b6"
+  }
 }

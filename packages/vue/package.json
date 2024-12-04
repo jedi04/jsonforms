@@ -50,7 +50,7 @@
     "@babel/core": "^7.16.0",
     "@babel/preset-env": "^7.16.4",
     "@babel/preset-typescript": "^7.9.0",
-    "@jsonforms/core": "3.4.2",
+    "@jsonforms/core": "workspace:*",
     "@rollup/plugin-alias": "^3.1.8",
     "@types/jest": "^27.4.1",
     "@types/node": "^18.19.4",
@@ -87,6 +87,5 @@
   "peerDependencies": {
     "@jsonforms/core": "3.4.1",
     "vue": "^3.2.26"
-  },
-  "gitHead": "4af85daafd9a89d6f7c4ea2a06a8c3ce5bf7c8b6"
+  }
 }

@@ -55,8 +55,8 @@
     "@babel/core": "^7.9.0",
     "@babel/preset-env": "^7.9.5",
     "@babel/preset-typescript": "^7.9.0",
-    "@jsonforms/core": "3.4.2",
-    "@jsonforms/vue": "3.4.2",
+    "@jsonforms/core": "workspace:*",
+    "@jsonforms/vue": "workspace:*",
     "@types/chai": "^4.2.11",
     "@types/jest": "^27.4.1",
     "@types/mocha": "^5.2.4",
@@ -96,6 +96,5 @@
     "@jsonforms/core": "3.4.1",
     "@jsonforms/vue": "3.4.1",
     "vue": "^3.2.26"
-  },
-  "gitHead": "4af85daafd9a89d6f7c4ea2a06a8c3ce5bf7c8b6"
+  }
 }

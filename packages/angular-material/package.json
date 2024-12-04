@@ -97,9 +97,9 @@
     "@angular/router": "^17.0.0",
     "@babel/plugin-proposal-nullish-coalescing-operator": "^7.16.5",
     "@babel/plugin-proposal-optional-chaining": "^7.16.5",
-    "@jsonforms/angular": "3.4.2",
-    "@jsonforms/core": "3.4.2",
-    "@jsonforms/examples": "3.4.2",
+    "@jsonforms/angular": "workspace:*",
+    "@jsonforms/core": "workspace:*",
+    "@jsonforms/examples": "workspace:*",
     "@ngtools/webpack": "^17.0.0",
     "@types/jasmine": "~3.8.0",
     "@types/lodash": "4.14.149",
@@ -138,6 +138,5 @@
     "webpack": "^5.78.0",
     "yargs": "^17.7.2",
     "zone.js": "~0.14.0"
-  },
-  "gitHead": "4af85daafd9a89d6f7c4ea2a06a8c3ce5bf7c8b6"
+  }
 }
