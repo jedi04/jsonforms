@@ -75,7 +75,7 @@ export const EnumCell = (
         )
       }
     >
-      <SelectTrigger id={id} className={className} asChild>
+      <SelectTrigger id={id} className={className}>
         <SelectValue />
       </SelectTrigger>
       <SelectContent>
