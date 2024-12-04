@@ -97,5 +97,6 @@
     "tslib": "^2.5.0",
     "typedoc": "~0.25.3",
     "typescript": "~5.2.2"
-  }
+  },
+  "gitHead": "4af85daafd9a89d6f7c4ea2a06a8c3ce5bf7c8b6"
 }

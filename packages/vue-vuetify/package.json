@@ -69,9 +69,9 @@
   },
   "devDependencies": {
     "@fortawesome/fontawesome-free": "^6.5.2",
-    "@jsonforms/core": "workspace:*",
-    "@jsonforms/examples": "workspace:*",
-    "@jsonforms/vue": "workspace:*",
+    "@jsonforms/core": "3.4.2",
+    "@jsonforms/examples": "3.4.2",
+    "@jsonforms/vue": "3.4.2",
     "@mdi/font": "^7.4.47",
     "@rushstack/eslint-patch": "^1.8.0",
     "@tsconfig/node20": "^20.1.4",
@@ -114,5 +114,6 @@
     "vue-eslint-parser": "^9.4.2",
     "vue-tsc": "^2.0.11",
     "vuetify": "^3.6.6"
-  }
+  },
+  "gitHead": "4af85daafd9a89d6f7c4ea2a06a8c3ce5bf7c8b6"
 }

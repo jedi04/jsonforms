@@ -58,8 +58,8 @@
   },
   "devDependencies": {
     "@istanbuljs/nyc-config-typescript": "^1.0.2",
-    "@jsonforms/core": "workspace:*",
-    "@jsonforms/react": "workspace:*",
+    "@jsonforms/core": "3.4.2",
+    "@jsonforms/react": "3.4.2",
     "@rollup/plugin-commonjs": "^23.0.3",
     "@rollup/plugin-json": "^5.0.2",
     "@rollup/plugin-node-resolve": "^15.0.1",
@@ -132,5 +132,6 @@
       "lcov",
       "text-summary"
     ]
-  }
+  },
+  "gitHead": "4af85daafd9a89d6f7c4ea2a06a8c3ce5bf7c8b6"
 }

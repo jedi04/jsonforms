@@ -50,7 +50,7 @@
     "@jsonforms/core": "3.4.1"
   },
   "devDependencies": {
-    "@jsonforms/core": "workspace:*",
+    "@jsonforms/core": "3.4.2",
     "@types/node": "^18.19.4",
     "@typescript-eslint/eslint-plugin": "^5.54.1",
     "@typescript-eslint/parser": "^5.54.1",
@@ -67,5 +67,6 @@
     "tslib": "^2.5.0",
     "typedoc": "~0.25.3",
     "typescript": "~5.2.2"
-  }
+  },
+  "gitHead": "4af85daafd9a89d6f7c4ea2a06a8c3ce5bf7c8b6"
 }
