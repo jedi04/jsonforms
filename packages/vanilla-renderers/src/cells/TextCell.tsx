@@ -33,6 +33,8 @@ import { withJsonFormsCellProps } from '@jsonforms/react';
 import type { VanillaRendererProps } from '../index';
 import { withVanillaCellProps } from '../util/index';
 import merge from 'lodash/merge';
+import { Input } from "@/components/ui/input"
+
 
 export const TextCell = (props: CellProps & VanillaRendererProps) => {
   const {
@@ -49,7 +51,7 @@ export const TextCell = (props: CellProps & VanillaRendererProps) => {
   const maxLength = schema.maxLength;
   const appliedUiSchemaOptions = merge({}, config, uischema.options);
   return (
-    <input
+    <Input
       type={appliedUiSchemaOptions.format === 'password' ? 'password' : 'text'}
       value={data || ''}
       onChange={(ev) =>

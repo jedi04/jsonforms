@@ -25,6 +25,7 @@
 import React from 'react';
 import { RendererProps } from '@jsonforms/core';
 import { VanillaRendererProps, WithChildren } from '../index';
+import "../styles/globals.css";
 
 export const JsonFormsLayout = ({
   className,

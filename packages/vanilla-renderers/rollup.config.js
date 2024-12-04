@@ -1,6 +1,8 @@
 import typescript from 'rollup-plugin-typescript2';
 import cleanup from 'rollup-plugin-cleanup';
 import { visualizer } from 'rollup-plugin-visualizer';
+import postcss from "rollup-plugin-postcss";
+
 
 const packageJson = require('./package.json');
 
@@ -26,6 +28,15 @@ export default [
     },
     plugins: [
       typescript(),
+      postcss({
+        config: './postcss.config.js',
+        extract: true,
+        extensions: ['.css'],
+        minimize: true,
+        inject: {
+          insertAt: 'top',
+        },
+      }),
       cleanup({ extensions: ['js', 'ts', 'jsx', 'tsx'] }),
       visualizer({ open: false }),
     ],
@@ -43,6 +54,15 @@ export default [
           compilerOptions: {
             target: 'ES5',
           },
+        },
+      }),
+      postcss({
+        config: './postcss.config.js',
+        extract: true,
+        extensions: ['.css'],
+        minimize: true,
+        inject: {
+          insertAt: 'top',
         },
       }),
       cleanup({ extensions: ['js', 'ts', 'jsx', 'tsx'] }),
