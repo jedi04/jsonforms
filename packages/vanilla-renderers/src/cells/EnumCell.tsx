@@ -36,6 +36,14 @@ import {
 } from '@jsonforms/react';
 import { i18nDefaults, withVanillaEnumCellProps } from '../util';
 import type { VanillaRendererProps } from '../index';
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select"
+
 
 export const EnumCell = (
   props: EnumCellProps & VanillaRendererProps & TranslateProps
@@ -57,33 +65,34 @@ export const EnumCell = (
     [t, schema, uischema, path]
   );
   return (
-    <select
-      className={className}
-      id={id}
+    <Select
       disabled={!enabled}
-      autoFocus={uischema.options && uischema.options.focus}
       value={data || ''}
-      onChange={(ev) =>
+      onValueChange={(ev) =>
         handleChange(
           path,
-          ev.target.selectedIndex === 0 ? undefined : ev.target.value
+          ev
         )
       }
     >
-      {[
-        <option value={''} key={'jsonforms.enum.none'}>
-          {noneOptionLabel}
-        </option>,
-      ].concat(
-        options.map((optionValue) => (
-          <option
-            value={optionValue.value}
-            label={optionValue.label}
-            key={optionValue.value}
-          />
-        ))
-      )}
-    </select>
+      <SelectTrigger id={id} className={className} asChild>
+        <SelectValue />
+      </SelectTrigger>
+      <SelectContent>
+        {[
+          <SelectItem value={''} key={'jsonforms.enum.none'}>
+            {noneOptionLabel}
+          </SelectItem>,
+        ].concat(
+          options.map((optionValue) => (
+            <SelectItem
+              value={optionValue.value}
+              key={optionValue.value}
+            />
+          ))
+        )}
+      </SelectContent>
+    </Select>
   );
 };
 /**

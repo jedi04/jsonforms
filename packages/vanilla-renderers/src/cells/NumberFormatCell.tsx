@@ -33,6 +33,7 @@ import {
 import { withJsonFormsCellProps } from '@jsonforms/react';
 import type { VanillaRendererProps } from '../index';
 import { withVanillaCellProps } from '../util/index';
+import { Input } from '@/components/ui/input';
 
 export const NumberFormatCell = (
   props: CellProps & VanillaRendererProps & Formatted<number | undefined>
@@ -48,7 +49,7 @@ export const NumberFormatCell = (
   };
 
   return (
-    <input
+    <Input
       type='text'
       value={formattedNumber}
       onChange={onChange}

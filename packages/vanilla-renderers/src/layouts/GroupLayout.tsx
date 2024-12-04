@@ -35,6 +35,13 @@ import { withJsonFormsLayoutProps } from '@jsonforms/react';
 import { renderChildren } from './util';
 import type { VanillaRendererProps } from '../index';
 import { withVanillaControlProps } from '../util';
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion"
+
 
 /**
  * Default tester for a group layout.
@@ -71,17 +78,24 @@ const GroupLayoutRendererComponent: FunctionComponent<
     .join(' ');
 
   return (
-    <fieldset
+    <Accordion
       className={classNames}
+      type="single" collapsible
       hidden={visible === undefined || visible === null ? false : !visible}
     >
-      {!isEmpty(label) ? (
-        <legend className={getStyleAsClassName('group.label')}>{label}</legend>
-      ) : (
-        ''
-      )}
-      {renderChildren(group, schema, childClassNames, path, enabled)}
-    </fieldset>
+      <AccordionItem value="item-1">
+        <AccordionTrigger>
+          {!isEmpty(label) ? (
+            <legend className={getStyleAsClassName('group.label')}>{label}</legend>
+          ) : (
+            ''
+          )}
+        </AccordionTrigger>
+        <AccordionContent>
+          {renderChildren(group, schema, childClassNames, path, enabled)}
+        </AccordionContent>
+      </AccordionItem>
+    </Accordion>
   );
 });
 

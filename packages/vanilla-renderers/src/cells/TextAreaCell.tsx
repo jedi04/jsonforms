@@ -33,13 +33,15 @@ import { withJsonFormsCellProps } from '@jsonforms/react';
 import type { VanillaRendererProps } from '../index';
 import { withVanillaCellProps } from '../util/index';
 import merge from 'lodash/merge';
+import { Textarea } from "@/components/ui/textarea"
+
 
 export const TextAreaCell = (props: CellProps & VanillaRendererProps) => {
   const { data, className, id, enabled, config, uischema, path, handleChange } =
     props;
   const appliedUiSchemaOptions = merge({}, config, uischema.options);
   return (
-    <textarea
+    <Textarea
       value={data || ''}
       onChange={(ev) =>
         handleChange(path, ev.target.value === '' ? undefined : ev.target.value)

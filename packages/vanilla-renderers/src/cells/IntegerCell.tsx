@@ -32,6 +32,7 @@ import {
 import { withJsonFormsCellProps } from '@jsonforms/react';
 import type { VanillaRendererProps } from '../index';
 import { withVanillaCellProps } from '../util/index';
+import { Input } from '@/components/ui/input';
 
 const toNumber = (value: string) =>
   value === '' ? undefined : parseInt(value, 10);
@@ -40,7 +41,7 @@ export const IntegerCell = (props: CellProps & VanillaRendererProps) => {
   const { data, className, id, enabled, uischema, path, handleChange } = props;
 
   return (
-    <input
+    <Input
       type='number'
       step='1'
       value={data ?? ''}
